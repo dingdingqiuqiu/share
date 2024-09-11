@@ -1,3 +1,6 @@
+### 参考配置
+Packer插件管理讲解：https://www.bilibili.com/video/BV1Td4y1578E/
+Packer转Lazy图文:   https://www.bilibili.com/read/cv24014511/
 ### 目录
 ```
 nvim -- nvim配置(~/.config/nvim)
