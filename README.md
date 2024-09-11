@@ -40,13 +40,5 @@ sudo update-alternatives --install /usr/bin/vim vim /opt/nvim-linux64/bin/nvim 1
 ### 必需软件
 - unzip:解压lsp
 - Hack Nerd Fond:nvim-web-devicons文档树所需图标显示 
-> 以下是安装命令
-```bash
-# git 克隆字体库
-git clone https://github.com/ryanoasis/nerd-fonts.git --depth 1
-# 打开文件夹
-cd nerd-fonts
-# 安装字体
-./install.sh
-```
-
+> 以下是安装命令(在`Windows`中安装好后在设置json中更改)
+> https://blog.csdn.net/aiboom/article/details/123584079
