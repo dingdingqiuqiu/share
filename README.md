@@ -1,4 +1,13 @@
+### 必需软件
+
+- unzip:解压lsp
+- Hack Nerd Fond Mono:nvim-web-devicons文档树所需图标显示(Mono) 
+
+> 以下是安装命令(在`Windows`中安装好后在设置json中更改)
+> https://blog.csdn.net/aiboom/article/details/123584079
+
 ### 参考配置
+
 Packer插件管理讲解：https://www.bilibili.com/video/BV1Td4y1578E/
 Packer转Lazy图文:   https://www.bilibili.com/read/cv24014511/
 ### 目录
@@ -36,9 +45,3 @@ neo:
 ```bash
 sudo update-alternatives --install /usr/bin/vim vim /opt/nvim-linux64/bin/nvim 120
 ```
-
-### 必需软件
-- unzip:解压lsp
-- Hack Nerd Fond:nvim-web-devicons文档树所需图标显示 
-> 以下是安装命令(在`Windows`中安装好后在设置json中更改)
-> https://blog.csdn.net/aiboom/article/details/123584079
