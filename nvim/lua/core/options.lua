@@ -1,3 +1,7 @@
+-- Personal_access_token
+vim.g.mason_github_token = "your_personal_access_token"
+
+-- 局部变量
 local opt = vim.opt
 
 -- 行号
