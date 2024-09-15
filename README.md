@@ -1,5 +1,6 @@
 ### 必需软件
-
+- ripgrep:telescope插件需要
+- fd-find:telescope插件需要
 - unzip:解压lsp
 - Hack Nerd Fond Mono:nvim-web-devicons文档树所需图标显示(Mono) 
 
@@ -10,6 +11,8 @@
 
 Packer插件管理讲解：https://www.bilibili.com/video/BV1Td4y1578E/
 Packer转Lazy图文:   https://www.bilibili.com/read/cv24014511/
+nvim与tmux快捷键设置： https://dingdingqiuqiu.github.io/2024/09/15/Neovim%E4%B8%8ETmux%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/
+
 ### 目录
 ```
 nvim -- nvim配置(~/.config/nvim)
