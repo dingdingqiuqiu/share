@@ -28,7 +28,7 @@ local plugins = {
     "neovim/nvim-lspconfig"
   },
 
-      -- 自动补全
+  -- 自动补全
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-nvim-lsp",
   "L3MON4D3/LuaSnip", -- snippets引擎，不装这个自动补全会出问题
@@ -43,7 +43,7 @@ local plugins = {
   "lewis6991/gitsigns.nvim", -- 左则git提示
 
   {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1', -- 文件检索
+    'nvim-telescope/telescope.nvim', tag = '0.1.4', -- 文件检索
     dependencies = { {'nvim-lua/plenary.nvim'} } -- requires要改为dependencies
   },
 
