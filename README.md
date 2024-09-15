@@ -9,9 +9,9 @@
 
 ### 参考配置
 
-Packer插件管理讲解：https://www.bilibili.com/video/BV1Td4y1578E/
-Packer转Lazy图文:   https://www.bilibili.com/read/cv24014511/
-nvim与tmux快捷键设置： https://dingdingqiuqiu.github.io/2024/09/15/Neovim%E4%B8%8ETmux%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/
+- Packer插件管理讲解：https://www.bilibili.com/video/BV1Td4y1578E/
+- Packer转Lazy图文:   https://www.bilibili.com/read/cv24014511/
+- nvim与tmux快捷键设置： https://dingdingqiuqiu.github.io/2024/09/15/Neovim%E4%B8%8ETmux%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%BE%E7%BD%AE/
 
 ### 目录
 ```
