@@ -2,6 +2,7 @@ require("plugins.plugins-setup")
 
 require("core.options")
 require("core.keymaps")
+require("core.run")
 
 -- 插件
 require("plugins.lualine")
