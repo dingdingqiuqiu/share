@@ -13,8 +13,9 @@ function CompileRunGcc()
         vim.cmd('!g++ -pipe -std=c++17 -O2 '.. filename .. ' -o ' .. output .. ' -fdiagnostics-color=always -fmax-errors=256')
         vim.cmd('!' .. output)
     elseif filetype == 'java' then
-        vim.cmd('!javac -encoding UTF-8 -sourcepath . -d . ' .. filename)
-        vim.cmd('!java -Dfile.encoding=UTF-8 ' .. vim.fn.expand('%:t:r'))  -- 仅获取文件名不带扩展名
+        local dir = vim.fn.expand('%:p:h')  -- 获取源文件的目录路径
+        vim.cmd('!javac -encoding UTF-8 -sourcepath ' .. dir .. ' -d ' .. dir .. ' ' .. filename)
+        vim.cmd('!java -Dfile.encoding=UTF-8 -cp ' .. dir .. ' ' .. vim.fn.expand('%:t:r'))
     elseif filetype == 'sh' then
         vim.cmd('!bash ' .. filename)
     elseif filetype == 'python' then
