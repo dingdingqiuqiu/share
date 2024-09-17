@@ -14,8 +14,21 @@ opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 
--- 防止包裹
-opt.wrap = false
+-- 自动换行
+-- markdown便于显示
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt_local.wrap = true
+    end,
+})
+-- 常用语言防止包裹
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {"python", "c", "cpp", "java"},
+    callback = function()
+        vim.opt_local.wrap = false
+    end,
+})
 
 -- 光标行
 opt.cursorline = true
