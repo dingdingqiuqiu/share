@@ -10,6 +10,8 @@
 > https://blog.csdn.net/aiboom/article/details/123584079
 
 - im-select: 输入法切换工具，用于保证normal模式下为英文
+- Windows/设置/时间和语言/输入/高级键盘设置/允许为每个窗口使用不同输入法
+- Window/系统设置/语言和区域/添加语言---》中文（简体）+英语（美国）
 - wsl下直接下载exe,将路径在.zshrc里写入环境变量
 - 参考core.im-select里的实现即可
 
