@@ -1,4 +1,5 @@
 ### 必需软件
+- nodejs && npm && sudo luarocks install jsregexp
 - 可以在`~/.config/nvim/lua/core/options.lua`中添加自己的`Personal access tokens`以达到对`Github`主页的最佳访问速度
 - ripgrep:telescope插件需要
 - fd-find:telescope插件需要
