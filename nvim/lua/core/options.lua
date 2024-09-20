@@ -1,8 +1,18 @@
--- Personal_access_token
-vim.g.mason_github_token = "your_personal_access_token"
-
 -- 局部变量
 local opt = vim.opt
+
+-- 实用向
+-- 光标距离窗口一定距离时，开始滚动屏幕内容
+vim.o.scrolloff = 10
+
+-- 设置返回 normal 模式时回到英文输入法
+vim.api.nvim_create_autocmd("InsertLeave", {
+    pattern = "*",
+    callback = function()
+        vim.cmd("silent !im-select com.apple.keylayout.ABC")
+    end,
+})
+
 
 -- 行号
 opt.relativenumber = true

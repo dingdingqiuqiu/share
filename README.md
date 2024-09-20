@@ -9,6 +9,10 @@
 > 以下是安装命令(在`Windows`中安装好后在设置json中更改)
 > https://blog.csdn.net/aiboom/article/details/123584079
 
+- im-select: 输入法切换工具，用于保证normal模式下为英文
+- wsl下直接下载exe,将路径在.zshrc里写入环境变量
+- 参考core.im-select里的实现即可
+
 ### 参考配置
 
 - Packer插件管理讲解：https://www.bilibili.com/video/BV1Td4y1578E/
