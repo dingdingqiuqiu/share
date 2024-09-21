@@ -58,6 +58,13 @@ neo:
 sudo update-alternatives --install /usr/bin/vim vim /opt/nvim-linux64/bin/nvim 120
 ```
 ## ideavimrc
+
+> 参考：
+>
+> [ideaVimrc(B站)](https://www.bilibili.com/video/BV115411X7i4/?p=6&spm_id_from=pageDriver)
+>
+> [ideavimrc(CSDN)](https://blog.csdn.net/leivzy/article/details/132001375)
+
 ### idea端
 - ideavim 
 - ideavim-EasyMotion
@@ -75,7 +82,7 @@ sudo update-alternatives --install /usr/bin/vim vim /opt/nvim-linux64/bin/nvim 1
 
 ### 主键设置
 
-    
+
 ### 基础设置
 
 ## 

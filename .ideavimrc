@@ -62,8 +62,8 @@ set which-key
 set notimeout
 
 " 正常模式：窗口操作
-nnoremap <Leader>sv <C-w>v
-nnoremap <Leader>sh <C-w>s
+nnoremap <Leader>; <C-w>v
+nnoremap <Leader>- <C-w>s
 nmap <C-h>      <C-w>h
 nmap <C-j>      <C-w>j
 nmap <C-k>      <C-w>k
@@ -157,7 +157,8 @@ nmap <leader>c :q!<CR>
 
 " e: Toggle Explorer ⭐️
 let g:WhichKeyDesc_ToggleExplorerOrExtract = "<leader>e ToggleExplorer"
-nmap <leader>e <action>(ActivateProjectToolWindow)
+" nmap <leader>e <action>(ActivateProjectToolWindow)
+nmap <leader>e :NERDTreeToggle<CR>
 " e: Extract
 " extract method/function
 vmap <leader>em <action>(ExtractMethod)
