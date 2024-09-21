@@ -1,3 +1,4 @@
+## nvim
 ### 必需软件
 - nodejs && npm && sudo luarocks install jsregexp
 - 可以在`~/.config/nvim/lua/core/options.lua`中添加自己的`Personal access tokens`以达到对`Github`主页的最佳访问速度
@@ -56,3 +57,48 @@ neo:
 ```bash
 sudo update-alternatives --install /usr/bin/vim vim /opt/nvim-linux64/bin/nvim 120
 ```
+## ideavimrc
+### idea端
+- ideavim 
+- ideavim-EasyMotion
+- ideavimExtension
+- which-key
+
+### 插件
+> JetBrains/ideavim仓库里有支持的所有插件
+- `tpope/vim-surround`:方便括号互换
+- `preservim/nerdtree`:可在文件栏进行hjkl
+- `treeyma/vim-multiple-cursors`
+
+### 基础设置
+> `keep-english-in-normal`在`idea`中作用一般，比建议启用
+
+### 主键设置
+
+    
+### 基础设置
+
+## 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 require("plugins.plugins-setup")
-
+-- 核心
 require("core.options")
 require("core.keymaps")
 require("core.run")
