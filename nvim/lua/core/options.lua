@@ -3,6 +3,7 @@ local opt = vim.opt
 
 -- 光标距离窗口一定距离时，开始滚动屏幕内容
 vim.o.scrolloff = 10
+vim.o.sidescrolloff = 5
 
 -- 行号
 opt.relativenumber = true
