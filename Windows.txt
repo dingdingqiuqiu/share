@@ -10,6 +10,10 @@ HiBitUninstall  -- 软件卸载
 https://www.hibitsoft.ir/Uninstaller.html
 UI不好看，但是可以卸载注册表信息。建议固定到开始屏幕。
 
+Revo Uninstaller Pro Full Version   -- 软件卸载
+我的百度网盘/1soft
+UI较前者有提升，更适合卸载老手，新手用上面那个。
+
 Potplayer       -- 影视播放器
 https://potplayer.daum.net/
 默认播放器的升级版
