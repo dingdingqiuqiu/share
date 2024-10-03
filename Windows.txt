@@ -1,0 +1,45 @@
+clash_for_windows   --魔法
+我的百度网盘/1soft
+魔法日常，建议开机自启。其他有趣魔法在"我的百度网盘/1soft下都有"，换机时注意迁移。
+
+Bandzip         -- 压缩，解压缩
+https://cn.bandisoft.com/bandizip/
+UI好看，功能实用。
+
+HiBitUninstall  -- 软件卸载
+https://www.hibitsoft.ir/Uninstaller.html
+UI不好看，但是可以卸载注册表信息。建议固定到开始屏幕。
+
+Potplayer       -- 影视播放器
+https://potplayer.daum.net/
+默认播放器的升级版
+
+Bandview  -- 图片查看
+https://tw.bandisoft.com/honeyview/
+该软件为honeyview升级版,直接下载Bandview即可。
+
+Powertoys       -- 集成工具箱
+https://github.com/microsoft/PowerToys/releases/tag/v0.85.0
+Win加Ctrl加T固定窗口到最上方挺有用的，此外，还有其他有趣功能。必备。
+
+# Quicker         -- 集成工具箱
+# https://getquicker.net/Download
+# UI不好看,集成工具可以轻松google到，不如PowerToys，快速打开可以其他方法替代，对我个人很鸡肋。
+# 大多数工具箱都挺鸡肋......
+
+PixPin      -- 截图软件
+https://pixpinapp.com/
+Snipaste_plus版,支持长截图，动图截图等功能。很赞。建议设置为开机自启。
+
+# Snipaste   -- 截图软件
+# https://zh.snipaste.com/download.html
+# 相当不错的截图软件
+
+Everything      -- 文件资源搜索
+https://www.voidtools.com/zh-cn/downloads/
+作为小工具软件不错，下方那个取代win11搜索的工具一般。无法消除win11的搜索，独自的话太占空了。
+
+# EverythingToolbar   -- 文件资源工具栏
+# https://github.com/srwi/EverythingToolbar/releases/tag/1.5.1
+# 同上，为集成插件
+

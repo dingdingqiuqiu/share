@@ -26,6 +26,10 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<S-L>", ":bnext<CR>")
 keymap.set("n", "<S-H>", ":bprevious<CR>")
 
+-- ---------- 终端模式 ---------- ---
+-- 从输入回到正常
+ivim.api.nvim_set_keymap('t', '<ESC>', '<C-\\><C-n>', {noremap = true, silent = true})
+
 -- ---------- 插件 ---------- ---
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
