@@ -6,13 +6,13 @@ Bandzip         -- 压缩，解压缩
 https://cn.bandisoft.com/bandizip/
 UI好看，功能实用。
 
-HiBitUninstall  -- 软件卸载
-https://www.hibitsoft.ir/Uninstaller.html
-UI不好看，但是可以卸载注册表信息。建议固定到开始屏幕。
-
 Revo Uninstaller Pro Full Version   -- 软件卸载
 我的百度网盘/1soft
-UI较前者有提升，更适合卸载老手，新手用上面那个。
+UI较HiBitUninstall有所提升，功能更加全面,视频教程:https://www.bilibili.com/video/BV1gM4y1Y7DK/
+
+# HiBitUninstall  -- 软件卸载
+# https://www.hibitsoft.ir/Uninstaller.html
+# UI不好看，但是可以卸载注册表信息。建议固定到开始屏幕。
 
 Potplayer       -- 影视播放器
 https://potplayer.daum.net/
