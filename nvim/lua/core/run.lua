@@ -1,5 +1,7 @@
 -- 按F5编译运行C、C++、Java、Python和Shell脚本
 vim.api.nvim_set_keymap('n', '<F5>', ':lua CompileRunGcc()<CR>', { noremap = true, silent = true })
+-- 按5编译运行C、C++、Java、Python和Shell脚本
+-- vim.api.nvim_set_keymap('n', '5', ':lua CompileRunGcc()<CR>', { noremap = true, silent = true })
 
 function CompileRunGcc()
     vim.cmd('w')  -- 保存文件

@@ -22,7 +22,8 @@ set relativenumber
 
 set incsearch
 set hlsearch
-" set keep-english-in-normal-and-restore-in-insert
+" 需要安装IdeaVimExtension插件才能提供正常使用
+set keep-english-in-normal-and-restore-in-insert
 
 " 插入模式：按下 jk 退出插入模式
 inoremap jk <Esc>

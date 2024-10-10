@@ -4,6 +4,7 @@ require("core.options")
 require("core.keymaps")
 require("core.run")
 require("core.im-select")
+require("core.tree")
 
 -- 插件
 require("plugins.lualine")
