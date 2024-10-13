@@ -24,7 +24,7 @@ https://tw.bandisoft.com/honeyview/
 
 Powertoys       -- 集成工具箱
 https://github.com/microsoft/PowerToys/releases/tag/v0.85.0
-Win加Ctrl加T固定窗口到最上方挺有用的，此外，还有其他有趣功能。必备。
+Win加Ctrl加T固定窗口到最上方挺有用的，此外，还有其他有趣功能。必备。更改键位也可以用这个,使用其中的键盘管理器功能即可。
 
 # Quicker         -- 集成工具箱
 # https://getquicker.net/Download
