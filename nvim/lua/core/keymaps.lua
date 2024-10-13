@@ -5,7 +5,7 @@ local keymap = vim.keymap
 ---------- 复制模式 ---------- ---
 -- 后面发现格式混乱问题只会发生在插入模式非paste模式下，正常模式下使用p命令用寄存器复制就没这个问题，只需要定义下删除全部\r的快捷键即可。因为win下换行是\n\r,lin下是\n,所以有这个问题
 -- 定义 p 命令，同时删除结尾的 \r 符号
-vim.api.nvim_set_keymap('n', 'p', 'p:%s/\\r//g<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'p', 'p:%s/\\r$//g<CR>', { noremap = true, silent = true })
 
 -- ---------- 插入模式 ---------- ---
 keymap.set("i", "jk", "<ESC>")
@@ -45,7 +45,9 @@ vim.keymap.set("n", "<leader>c", function()
       end
 end, { noremap = true, silent = true })
 -- 将 :Q 映射为 :qa! 命令以退出 Neovim
+-- 将 :W 映射为 :wa! 命令以保存所有缓冲区
 vim.api.nvim_create_user_command('Q', 'qa!', {})
+vim.api.nvim_create_user_command('W', 'wa!', {})
 
 -- 窗口
 keymap.set("n", "<leader>;", "<C-w>v") -- 水平新增窗口 
