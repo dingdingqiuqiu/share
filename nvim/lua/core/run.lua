@@ -1,6 +1,8 @@
 -- 按F5编译运行C、C++、Java、Python和Shell脚本
-vim.api.nvim_set_keymap('n', '<F5>', ':lua CompileRunGcc()<CR>', { noremap = true, silent = true })
--- 按5编译运行C、C++、Java、Python和Shell脚本
+-- vim.api.nvim_set_keymap('n', '<F5>', ':lua CompileRunGcc()<CR>', { noremap = true, silent = true })
+-- 按<leader>ru编译运行C、C++、Java、Python和Shell脚本
+vim.api.nvim_set_keymap('n', '<leader>ru', ':lua CompileRunGcc()<CR>', { noremap = true, silent = true })
+-- 按5编译运行C、C++、Java、Python和Shell脚本,直接按5跳转带5的都会失败
 -- vim.api.nvim_set_keymap('n', '5', ':lua CompileRunGcc()<CR>', { noremap = true, silent = true })
 
 function CompileRunGcc()
@@ -15,7 +17,7 @@ function CompileRunGcc()
         vim.cmd('! "' .. output .. '"')
     elseif filetype == 'cpp' then
         -- 编译C++文件，处理路径中的空格和特殊字符
-        vim.cmd('!g++ -pipe -std=c++17 -O2 "' .. filename .. '" -o "' .. output .. '" -fdiagnostics-color=always -fmax-errors=256')
+        vim.cmd('!g++ -pipe -std=c++17 -O2 "' .. filename .. '" -o "' .. output .. '" -fdiagnostics-color=always -fmax-errors=256 -lntl -lgmp -lgmpxx')
         -- 运行编译后的可执行文件
         vim.cmd('! "' .. output .. '"')
     elseif filetype == 'java' then

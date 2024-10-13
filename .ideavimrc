@@ -1,17 +1,24 @@
 " ================================================================================================
 " = Extensions =====================================
 " ================================================================================================
+" cs"'改变括号
 Plug 'tpope/vim-surround'
+" 文档树
 Plug 'preservim/nerdtree'
-
+" 快速注释
+Plugin 'tpope/vim-commentary'
+" 多光标快速编辑
 Plug 'terryma/vim-multiple-cursors'
 map <D-b> <A-n>
 map mx <A-x>
 map mv <A-p>
-
+" 将 :Q 映射为 Exit 动作
+command! -nargs=0 Q :action Exit
 " ================================================================================================
 " = Basic settings =====================================
 " ================================================================================================
+" normal模式下按可以编译运行
+" nnoremap 5 :action CompileProject<CR>:action Run<CR>
 set clipboard+=unnamed
 set ignorecase
 set scrolloff=10
@@ -27,6 +34,9 @@ set keep-english-in-normal-and-restore-in-insert
 
 " 插入模式：按下 jk 退出插入模式
 inoremap jk <Esc>
+" inoremap <C-v> <Esc>p
+" Map Ctrl+V to paste in insert mode
+inoremap <C-v> <C-r>+
 
 " 视觉模式：单行或多行移动
 vnoremap J :m '>+1<CR>gv=gv
@@ -135,6 +145,8 @@ let g:WhichKeyDesc_RunOrRe_ReRunTests = "<leader>rt ReRunTests"
 nmap <leader>rt <action>(RerunTests)
 let g:WhichKeyDesc_RunOrRe_Rename = "<leader>rn Rename"
 map <leader>rn <action>(RenameElement)
+let g:WhichKeyDesc_RunOrRe_Run = "<leader>ru Run"
+map <leader>ru <action>(Run)
 
 " w: Window ⭐️
 let g:WhichKeyDesc_Windows = "<leader>w Windows"
@@ -154,12 +166,18 @@ nmap <leader>zc <action>(CollapseAllRegions)
 
 " c: Close ⭐️;
 let g:WhichKeyDesc_CloseBuffer = "<leader>c CloseBuffer"
-nmap <leader>c :q!<CR>
+nmap <leader>c :bd!<CR>
 
 " e: Toggle Explorer ⭐️
 let g:WhichKeyDesc_ToggleExplorerOrExtract = "<leader>e ToggleExplorer"
-" nmap <leader>e <action>(ActivateProjectToolWindow)
-nmap <leader>e :NERDTreeToggle<CR>
+nmap <leader>e <action>(ActivateProjectToolWindow)
+"nmap <leader>e <action>(SelectInProjectView)
+"nmap <leader>e :NERDTreeToggle<CR>
+"nmap <leader>e <action>(SelectInProjectView)
+" 切换NERDTree窗口状态
+"nmap <leader>e :call ToggleNERDTree()<CR>
+nmap <leader>q :NERDTreeClose<CR>
+
 " e: Extract
 " extract method/function
 vmap <leader>em <action>(ExtractMethod)

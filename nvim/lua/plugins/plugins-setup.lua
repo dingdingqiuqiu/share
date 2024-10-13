@@ -11,7 +11,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
 local plugins = {
   "folke/tokyonight.nvim", -- 主题
   "nvim-lualine/lualine.nvim",  -- 状态栏
@@ -35,20 +34,20 @@ local plugins = {
   "saadparwaiz1/cmp_luasnip",
   "rafamadriz/friendly-snippets",
   "hrsh7th/cmp-path", -- 文件路径
-  "hrsh8th/cmp-buffer", -- buffer补全
+  "hrsh7th/cmp-buffer", -- buffer补全
 
   "numToStr/Comment.nvim", -- gcc和gc注释
   "windwp/nvim-autopairs", -- 自动补全括号
 
   "akinsho/bufferline.nvim", -- buffer分割线
   "lewis6991/gitsigns.nvim", -- 左则git提示
-
-  {
+ {
     'nvim-telescope/telescope.nvim', tag = '0.1.4', -- 文件检索
     dependencies = { {'nvim-lua/plenary.nvim'} } -- requires要改为dependencies
-  },
-
-}
+    -- requires = { {'nvim-lua/plenary.nvim'} } -- requires要改为dependencies
+ },
+ }
 local opts = {} -- 注意要定义这个变量
 
 require("lazy").setup(plugins, opts)
+

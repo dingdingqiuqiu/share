@@ -1,6 +1,6 @@
--- 局部变量
 local opt = vim.opt
 
+-- 实用向
 -- 光标距离窗口一定距离时，开始滚动屏幕内容
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 5
@@ -16,14 +16,14 @@ opt.expandtab = true
 opt.autoindent = true
 
 -- 自动换行
--- markdown便于显示
+-- 便于显示
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "markdown",
     callback = function()
         vim.opt_local.wrap = true
     end,
 })
--- 常用语言防止包裹
+-- 防止包裹
 vim.api.nvim_create_autocmd("FileType", {
     pattern = {"python", "c", "cpp", "java"},
     callback = function()
