@@ -13,3 +13,14 @@ vim.api.nvim_create_autocmd("BufEnter", {
   end
 })
 
+-- 当前光标处于nvim-tree上时，映射<Esc>键为退回上个窗口
+function SwitchToNextWindow()
+  if vim.api.nvim_buf_get_name(0):match("NvimTree_") then
+    if vim.fn.winnr('$') > 1 then
+      vim.cmd('wincmd p')  -- 退回上个窗口
+    end
+  end
+end
+
+vim.api.nvim_set_keymap('n', '<Esc>', ':lua SwitchToNextWindow()<CR>', { noremap = true, silent = true })
+
