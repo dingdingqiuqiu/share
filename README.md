@@ -1,5 +1,5 @@
 # 写在最前面
-由于众所周知的原因，远程服务器想要访问该页面获取配置和插件资源很吃力，故而将远程服务器常用的nvim配置（包括本体，配置，插件）和tmux(本体，配置）上传至gitee，以方便服务器下载，本项目不再更新，请移步至https://gitee.com/dingdingqiu/share
+由于众所周知的原因，远程服务器想要访问该页面获取配置和插件资源很吃力，故而将远程服务器常用的nvim配置（包括本体v10.2，配置，插件）和tmux(仅上传配置,tmux本体为3.2a,ubuntu22直接apt-get即可)上传至gitee，以方便服务器下载，本项目不再更新，请移步至https://gitee.com/dingdingqiu/share
 ## nvim
 > Ubuntu22.04(WSL),nvimv10.1
 ### 必需软件
